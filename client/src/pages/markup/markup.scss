@@ -1,0 +1,186 @@
+@import "~taro-ui/dist/style/components/flex.scss";
+@import "~taro-ui/dist/style/components/rate.scss";
+@import "~taro-ui/dist/style/components/icon.scss";
+
+page {
+  background-color: #EFF3F6;
+}
+
+.head {
+
+//背景图
+  .thumbnail-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .contain_box
+ {
+   position: absolute;
+   top: 127rpx;
+   left: 71rpx;
+   right: 0;
+   width: 610rpx;
+   height: 903rpx;
+   box-sizing: border-box;
+   display: block;
+   border-radius: 50px;
+   background-color:rgba(255,255,255,0.2);
+   z-index: 2;
+//“打卡成功”
+  .desc {
+    position: absolute;
+    margin-top: 800rpx;
+    width: 100%;
+    color: #fff;
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .scene-image {
+    position: absolute;
+    margin-top: 270rpx;
+    margin-left: 83rpx;
+    width: 450rpx;
+    height: 300rpx;
+
+    image {
+      border-radius: 10rpx;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .date {
+    position: absolute;
+    margin-top: 80rpx;
+    margin-left: 13%;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+    letter-spacing: 16rpx;
+    -webkit-text-stroke: 2px rgb(255, 255, 255); //文字描边
+    color: transparent;   //字体颜色设置为透明
+  }
+
+  .address {
+    position: absolute;
+    font-size: 42rpx;
+    font-weight: 600;
+    margin-top: 600rpx;
+    margin-left: 13%;
+    color: rgb(49, 72, 88);
+  }
+
+  .tag {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 25rpx;
+    margin-top: 670rpx;
+    margin-right: 75rpx;
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 5rpx 15rpx;
+    border-radius: 5rpx;
+  }
+ }
+ .contain_box::after{
+  content: '';
+  filter: blur(10px);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background:inherit;
+  z-index: -1;
+ }
+}
+
+.share-container {
+  margin: 30rpx 40rpx;    
+  width: 100%;
+  .share-txt {
+    color: #444;
+  }
+
+  button {
+    // position: static;
+    line-height: 0;
+    padding: 10px;
+    border: none;
+    margin-left: 0px;
+  }
+
+  .share-item {
+    background-color: #fff;
+    padding: 10rpx;
+    border-radius: 30rpx;
+    font-size: 30rpx;
+    color: #666;
+    margin-right: 20rpx;
+    width: 150rpx;
+
+    .share-icon {
+      width: 30rpx;
+      height: 30rpx;
+      margin-right: 10rpx;
+    }
+  
+  }
+}
+
+.return-btn-container {
+  width: 100%;
+  margin: 20rpx 0rpx;
+  .return-btn {
+    border-radius: 50rpx;
+    background-color: #2D8CF0;
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    padding: 20rpx;
+  }
+
+}
+
+
+.comment-container {
+  padding: 30rpx;
+}
+.comment {
+  background: #fff;
+  border-radius: 10rpx;
+  padding: 20rpx;
+}
+
+.comment-avatar {
+  border-radius: 50%;
+  height: 80rpx;
+  width: 80rpx;
+}
+
+.comment-username {
+  font-size: 30rpx;
+  font-weight: 600;
+}
+
+.comment-date {
+  font-size: 25rpx;
+  color: #888;
+}
+
+.commet-txt {
+  background-color: #f9f9f9;
+  padding: 20rpx;
+  border-radius: 10rpx;
+  margin-top: 20rpx;
+  font-size: 30rpx;
+  color: #666;
+}
+
+.comment-user {
+  margin-left: 20rpx;
+
+}

@@ -1,0 +1,139 @@
+@import "~taro-ui/dist/style/components/flex.scss";
+@import "~taro-ui/dist/style/components/icon.scss";
+@import "~taro-ui/dist/style/components/search-bar.scss";
+
+@import "~taro-ui/dist/style/components/rate.scss";
+@import "~taro-ui/dist/style/components/button.scss";
+@import "~taro-ui/dist/style/components/tag.scss";
+
+// page {
+//   background-color: #f9f9f9;
+// }
+
+
+
+.thumbnail {
+  width: 100%;
+}
+
+
+
+
+
+
+.list-container {
+
+  .divider {
+    height: 10rpx;
+    width: 100%;
+    background-color: #f1f1f1;
+  }
+
+  .list-header {
+
+    .header-title {
+      width: 20%;
+      margin: 30rpx;
+      color: #969ea5;
+      font-weight: 700;
+
+    }
+    .more {
+      color: #5293b3;
+      margin: 30rpx;
+      width: 100rpx;
+    }
+
+  }
+
+  .list-item {
+
+    border-bottom: 1px solid #eeeeee;
+
+    .scene-img {
+      width: 250rpx;
+      height: 200rpx;
+      border-radius:5rpx;
+      margin: 20rpx 30rpx;
+    }
+
+    .scene-desc {
+      margin: 20rpx 0rpx;
+
+      .rate {
+        font-size: 25rpx;
+        color: #e6ac42;
+        margin-top: 20rpx;
+      }
+
+      .scene-title {
+        color: #333;
+        font-size: 40rpx;
+        font-weight: 700;
+        width: 400rpx;
+      }
+
+      .region {
+        color: #888;
+        font-size: 25rpx;
+        margin-top: 20rpx;
+      }
+
+    }
+
+
+  }
+
+
+
+}
+
+
+
+.history-box{
+  padding: 0px 20px;
+
+  .history-title{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+    font-size: 35px;
+    color: #888;
+    // border: 1px solid #f1f1f1;
+    padding: 10px 10px;
+    
+  }
+  
+
+  .history-list{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  
+}
+
+.none_rearch-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .none_rearch{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    width: 20%;
+    height: 20%;
+  }
+  .text1{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  .text2{
+    color: #888;
+    text-align: center;
+    font-size: 25px;
+  }
+  
+}

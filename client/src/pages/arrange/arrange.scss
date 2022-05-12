@@ -1,0 +1,91 @@
+@import "~taro-ui/dist/style/components/fab.scss";
+@import "~taro-ui/dist/style/components/icon.scss";
+@import "~taro-ui/dist/style/components/modal.scss";
+@import "~taro-ui/dist/style/components/flex.scss";
+.tips {
+  color: rgb(224, 233, 238);
+  text-align: center;
+  // font-family:"宋体";
+  font-size:large;
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+  letter-spacing: 0.04em;
+}
+
+
+.thumbnail {
+  width: 100%;
+  opacity: 0.75;
+}
+
+.fab-btn {
+  position: fixed;
+  right: 40rpx;
+  z-index: 9999999;
+  bottom: 60rpx;
+}
+
+.at-fab {
+  background-color: #2D8CF0;
+}
+
+
+
+.arrange-container {
+  padding: 20rpx 30rpx;
+  // background-color: rgb(204, 207, 252);
+  background: url('https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fhbimg.huabanimg.com%2Fea734b22d97a1d88985b48cdc2c27054a725a7fe4867-ovSN39_fw658&refer=http%3A%2F%2Fhbimg.huabanimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1654761023&t=23638ab524ac8746682c50da48a8b15e');
+  background-size: 100% 100%;
+}
+
+
+.arrange-item {
+  // margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  position: relative;
+  border-radius: 10rpx;
+  box-shadow: 0 3px 8px 0 rgba(0,0,0,.03);
+
+  .thumbnail-img {
+    display: block;
+    width: 100%;
+  border-radius: 10rpx;
+  height: 200rpx;
+  box-shadow: 0 3px 8px 0 rgba(0,0,0,.03);
+
+  }
+
+  .thumbnail-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    opacity: 0.5;
+    border-radius: 10rpx;
+    background: #000;
+  box-shadow: 0 3px 8px 0 rgba(0,0,0,.03);
+
+  }
+
+  .desc {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    height: 200rpx;
+    line-height: 200px;
+    font-size: 30rpx;
+    font-weight: 600;
+  }
+}
+
+.form-item {
+  height: 100rpx;
+  color: #666;
+  font-size: 30rpx;
+}
+
