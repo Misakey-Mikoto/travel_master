@@ -30,10 +30,7 @@ export default class Index extends Component {
   };
 
 
-  componentWillMount() {
-    Taro.showLoading({
-      title: '加载中...'
-    })
+  componentDidShow(){
     const { sceneId } = this.$router.params;
     Taro.cloud.callFunction({
       name: 'mark',
@@ -50,12 +47,30 @@ export default class Index extends Component {
 
   }
 
-  componentDidMount() { }
+  componentDidMount() { 
+  }
 
-  componentWillUnmount() { }
+  componentWillunmount() { 
 
-  componentDidShow() {
+  }
 
+  componentWillmount()  {
+Taro.showLoading({
+      title: '加载中...'
+    })
+    const { sceneId } = this.$router.params;
+    Taro.cloud.callFunction({
+      name: 'mark',
+      data: {
+        $url: 'list'
+      }
+    }).then(res => {
+      console.log(res);
+      Taro.hideLoading();
+      this.setState({
+        markList: res.result.data
+      })
+    });
   }
 
   componentDidHide() { }
@@ -73,10 +88,13 @@ export default class Index extends Component {
     let { markList } = this.state;
     let content;
     if (markList.length === 0) {
+      
       content = (
+      
         <View className="tips">
-          暂无打卡数据～
+          暂无打卡数据～233
         </View>
+     
       )
 
     } else {
