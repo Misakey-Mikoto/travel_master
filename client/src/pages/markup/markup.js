@@ -108,7 +108,6 @@ export default class Index extends Component {
         <View className="scene-image">
           <Image src={markInfo.sceneImage}></Image>
         </View>
-        {/* <View className="tag">{tag}</View> */}
         </View>
       
       </View>
@@ -123,10 +122,7 @@ export default class Index extends Component {
           <Image src={wechat} className="share-icon"></Image>
           <View className="">微信</View>
         </Button>
-        <Button openType="share" className="share-item at-row at-row__align--center at-row__justify--center">
-          <Image src={moment} className="share-icon"></Image>
-          <View className="">朋友圈</View>
-        </Button>
+
       </View>
     );
   }
